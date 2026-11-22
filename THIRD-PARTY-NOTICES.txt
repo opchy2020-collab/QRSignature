@@ -1,0 +1,31 @@
+QR Signature: third-party notices
+=================================
+
+QR Signature is built with no runtime libraries. The only third-party material is
+the fonts and icons stored in this folder, listed here with their licences.
+
+FONTS (stored in assets/fonts, nothing is loaded from the internet)
+-------------------------------------------------------------------
+Poppins       Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+Lora          Copyright 2011 The Lora Project Authors (https://github.com/cyrealtype/Lora-Cyrillic)
+Both are licensed under the SIL Open Font License, Version 1.1. The full licence text is in
+assets/fonts/OFL.txt. The files here are the Latin subset only.
+
+ICONS (stored inside assets/js/app.js, built from src/ts/ui/icons-data.ts)
+--------------------------------------------------------------------------
+Lucide (interface icons)        ISC licence. https://lucide.dev
+    Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT).
+    All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+Simple Icons (Facebook, Instagram, WhatsApp and X marks)    CC0 1.0. https://simpleicons.org
+Font Awesome Free (LinkedIn mark)    Icons: CC BY 4.0. https://fontawesome.com/license/free
+    Font Awesome Free 6 by @fontawesome - https://fontawesome.com
+
+TRADEMARKS
+----------
+Facebook, Instagram, WhatsApp, LinkedIn and X are trademarks of their owners. Their names and marks
+appear only to label the share buttons. QR Signature is not connected to, or endorsed by, any of them.
+The QR Code name is a registered trademark of DENSO WAVE INCORPORATED.
+
+DEVELOPMENT TOOLS (only needed if you change the code; not part of the finished site)
+--------------------------------------------------------------------------------------
+esbuild (MIT), TypeScript (Apache-2.0), @types/node (MIT).

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#2c2416">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QR Signature">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="{{page}}">
+<a class="skip-link" href="#main">Skip to main content</a>
+{{header}}
+<main id="main">
+{{content}}
+</main>
+{{footer}}
+<button class="back-to-top" type="button" aria-label="Back to top">{{icon:arrowUp}}</button>
+<noscript><p class="notice"><strong>JavaScript is turned off.</strong> QR Signature needs it to make codes on your device. Please turn it on in your browser settings and reload this page.</p></noscript>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

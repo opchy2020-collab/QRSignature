@@ -1,0 +1,168 @@
+---
+title: QR Signature: create, customize and share QR codes
+description: Make a QR code for a link, Wi-Fi, a contact card and more. Pick colors and shapes, check that it scans, then download or share it. It all happens on your own device.
+page: home
+nav: home
+---
+<section class="hero lattice on-dark" aria-labelledby="hero-title">
+  <div class="container">
+    <div>
+      <p class="eyebrow rise">Create. Customize. Share.</p>
+      <h1 id="hero-title" class="rise rise-2">QR codes with <span>your signature</span> on them</h1>
+      <p class="hero-tagline rise rise-3">Make a code for a link, Wi-Fi, a contact card and more. Choose its colors and shapes, check that it scans, then download it or share it.</p>
+      <div class="btn-row rise rise-3">
+        <a class="btn" href="create.html">{{icon:qr}}<span>Open the studio</span></a>
+        <a class="btn btn--light" href="templates.html">See the templates</a>
+      </div>
+      <ul class="hero-points">
+        <li>{{icon:shield}} Made on your device</li>
+        <li>{{icon:zap}} No sign-up needed</li>
+        <li>{{icon:scan}} Scan check built in</li>
+      </ul>
+    </div>
+
+    <div class="hero-gen rise rise-2" data-hero-gen>
+      <h2>Try it now</h2>
+      <div class="field">
+        <label for="hero-url">Web address</label>
+        <input class="input" id="hero-url" type="text" inputmode="url" autocomplete="off" spellcheck="false" autocapitalize="off" placeholder="example.com" aria-describedby="hero-error">
+      </div>
+      <p class="error" id="hero-error"></p>
+      <div class="stage hero-stage" data-hero-stage data-stage-template="saffron"><div class="viewfinder"><i></i><i></i><i></i><i></i><div class="plate"></div></div></div>
+      <p class="hint" id="hero-style-label">Pick a style</p>
+      <ul class="swatches" role="radiogroup" aria-labelledby="hero-style-label"></ul>
+      <div class="btn-row" style="margin-top:18px">
+        <button class="btn" id="hero-download" type="button">{{icon:download}}<span>Download PNG</span></button>
+        <a class="btn btn--outline" id="hero-studio" href="create.html"><span>Customize more</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="types" aria-labelledby="types-title">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="types-title">What do you want to share?</h2>
+      <p>Nine kinds of code. Pick one and the form asks only for what it needs.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter code types">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+      <button class="filter-btn" type="button" data-filter="message" aria-pressed="false">Messages</button>
+      <button class="filter-btn" type="button" data-filter="contact" aria-pressed="false">Contacts</button>
+      <button class="filter-btn" type="button" data-filter="other" aria-pressed="false">Other</button>
+    </div>
+    <ul class="menu-items">
+      <li class="menu-item" data-group="web"><div class="menu-item-top">{{icon:link}}</div><div class="menu-item-content"><h3>Website link</h3><p>Open a web page when someone scans.</p><a class="link-arrow" href="create.html?type=url">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="web"><div class="menu-item-top">{{icon:social}}</div><div class="menu-item-content"><h3>Social profile</h3><p>Send people to your Instagram, Facebook, X or LinkedIn page.</p><a class="link-arrow" href="create.html?type=social">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="message"><div class="menu-item-top">{{icon:whatsapp}}</div><div class="menu-item-content"><h3>WhatsApp chat</h3><p>Start a chat with you, with a first message ready.</p><a class="link-arrow" href="create.html?type=whatsapp">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="message"><div class="menu-item-top">{{icon:mail}}</div><div class="menu-item-content"><h3>Email</h3><p>Open a new email with the address and subject filled in.</p><a class="link-arrow" href="create.html?type=email">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="message"><div class="menu-item-top">{{icon:phone}}</div><div class="menu-item-content"><h3>Phone call</h3><p>Start a call to your number.</p><a class="link-arrow" href="create.html?type=phone">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="message"><div class="menu-item-top">{{icon:sms}}</div><div class="menu-item-content"><h3>Text message</h3><p>Start an SMS with a message ready to send.</p><a class="link-arrow" href="create.html?type=sms">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="contact"><div class="menu-item-top">{{icon:contact}}</div><div class="menu-item-content"><h3>Contact card</h3><p>Let people save your details in their phone in one scan.</p><a class="link-arrow" href="create.html?type=contact">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="other"><div class="menu-item-top">{{icon:wifi}}</div><div class="menu-item-content"><h3>Wi-Fi</h3><p>Let guests join your network without typing the password.</p><a class="link-arrow" href="create.html?type=wifi">Make it {{icon:arrowRight}}</a></div></li>
+      <li class="menu-item" data-group="other"><div class="menu-item-top">{{icon:text}}</div><div class="menu-item-content"><h3>Plain text</h3><p>Show a short message or note.</p><a class="link-arrow" href="create.html?type=text">Make it {{icon:arrowRight}}</a></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="scan-title">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Scan check</p>
+      <h2 id="scan-title" style="font-size:clamp(1.9rem,3.6vw,2.6rem);color:var(--heading)">A pretty code is no use if it does not scan</h2>
+      <p>Pale dots, a missing border or a very large logo can stop phones from reading a code. QR Signature tests your design as you work and tells you in plain words what to fix, before you print anything.</p>
+      <ul class="checklist">
+        <li>{{icon:circleCheck}} Contrast between the code and its background</li>
+        <li>{{icon:circleCheck}} Empty border around the code</li>
+        <li>{{icon:circleCheck}} Logo size and error correction</li>
+        <li>{{icon:circleCheck}} How much data the code holds, and the smallest size to print</li>
+      </ul>
+      <a class="link-arrow" href="how-it-works.html#scan-check">How the scan check works {{icon:arrowRight}}</a>
+    </div>
+    <div class="demo-pair">
+      <div class="demo" data-scan-demo="weak"><div class="plate"></div><span class="demo-label"></span><p>Light dots on a light background. Many phones struggle here.</p></div>
+      <div class="demo" data-scan-demo="strong"><div class="plate"></div><span class="demo-label"></span><p>Dark dots on a light background. Easy for every phone.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="templates" aria-labelledby="templates-title">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="templates-title">Start from a style you like</h2>
+      <p>Twelve ready-made looks. Each one is tested for contrast, and you can change every detail afterwards.</p>
+    </div>
+    <ul class="poster-grid" id="home-posters"></ul>
+    <p style="text-align:center;margin:36px 0 0"><a class="btn btn--outline" href="templates.html">See all twelve</a></p>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="why-title">Made to be trusted</h2>
+      <p>A QR code is often the first thing a customer sees. These are the promises behind ours.</p>
+    </div>
+    <ul class="feature-grid">
+      <li class="feature">{{icon:shield}}<h3>Private by design</h3><p>Your link, Wi-Fi password or contact details are turned into a code on your own device. They are never uploaded.</p></li>
+      <li class="feature">{{icon:image}}<h3>Your logo stays yours</h3><p>Add a logo or a round profile picture. It is processed in your browser and never leaves it.</p></li>
+      <li class="feature">{{icon:download}}<h3>Sharp at any size</h3><p>Download a PNG for screens or an SVG for print. The SVG stays crisp on a business card or a billboard.</p></li>
+      <li class="feature">{{icon:share}}<h3>Share in one tap</h3><p>Open the share screen for Facebook, WhatsApp, LinkedIn and X, send the image from your phone, or copy the link.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="steps-title">Three steps</h2>
+      <p>No account, no waiting.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Say what it is for</h3><p>Choose a link, Wi-Fi, a contact card or another type, and fill in the details.</p></li>
+      <li><h3>Make it yours</h3><p>Pick a template, then change dots, corners, colors and add a logo if you like.</p></li>
+      <li><h3>Check, save, share</h3><p>Read the scan check, download your code and share it where people will see it.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="planned-title">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="planned-title">What is coming later</h2>
+      <p>These are plans, not features. None of them exist yet, and we will say so on the day they do.</p>
+    </div>
+    <ul class="planned">
+      <li><span class="badge-soon">Not built yet</span><strong>Private file sharing</strong><span>Share a photo, PDF or document through a private link.</span></li>
+      <li><span class="badge-soon">Not built yet</span><strong>Video, passwords and expiry</strong><span>Protect a shared link with a password or an end date.</span></li>
+      <li><span class="badge-soon">Not built yet</span><strong>Accounts and a dashboard</strong><span>Save your codes and come back to them later.</span></li>
+      <li><span class="badge-soon">Not built yet</span><strong>Codes you can edit</strong><span>Change where a printed code points, and see scan counts.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container container--narrow">
+    <div class="section-title">
+      <h2 id="faq-title">Questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is my information sent anywhere? {{icon:chevronDown}}</summary><p>No. The code is made inside your browser. What you type, and any logo you add, stay on your device. The share buttons only open each network's own page when you click them, and they carry the link you chose to share, nothing else.</p></details>
+      <details><summary>Will my code stop working one day? {{icon:chevronDown}}</summary><p>The codes made here hold their information inside the pattern itself, with no server in between. They keep working for as long as the thing they point to still exists. A web page that is taken down will not open, however well the code scans.</p></details>
+      <details><summary>Should I download a PNG or an SVG? {{icon:chevronDown}}</summary><p>Use PNG for screens, slides and social posts. Use SVG for printing, because it stays sharp at any size. If you are unsure, take both.</p></details>
+      <details><summary>Can I put my logo in the middle? {{icon:chevronDown}}</summary><p>Yes. The code then uses its strongest error correction so it can still be read. Keep the logo small, and test the code with a couple of phones before you print.</p></details>
+      <details><summary>How big should I print it? {{icon:chevronDown}}</summary><p>The scan check shows the smallest size for your code. As a rule of thumb, a phone can read a code from about ten times its width away, so a code that people scan from a poster across a room needs to be much larger than one on a business card.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta stage" data-stage-template="saffron">
+      <h2 id="cta-title">Ready to sign your code?</h2>
+      <p>It takes about a minute. No account needed.</p>
+      <a class="btn" href="create.html">{{icon:qr}}<span>Open the studio</span></a>
+    </div>
+  </div>
+</section>
